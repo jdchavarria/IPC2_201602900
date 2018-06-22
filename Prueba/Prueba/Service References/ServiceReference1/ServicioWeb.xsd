@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://paqueteServicio/" targetNamespace="http://paqueteServicio/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Suma" type="tns:Suma" />
+  <xs:element name="SumaResponse" type="tns:SumaResponse" />
+  <xs:complexType name="Suma">
+    <xs:sequence>
+      <xs:element name="numero1" type="xs:int" />
+      <xs:element name="numero2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SumaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
